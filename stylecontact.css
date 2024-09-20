@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    padding-top: 6rem;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 6rem;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #b711e0;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-shadow: 0 0 10px #b711e0;
+    margin-right: 2rem;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b711e0;
+    border-bottom: 3px solid #b711e0;
+    text-shadow: 0 0 10px #b711e0;
+}
+
+@media (max-width: 995px) {
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #b711e0;
+        border-bottom: 3px solid #b711e0;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #b711e0;
+    }
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 6rem auto;
+}
+
+.contact-box {
+    background: white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-left {
+    flex: 1 1 60%;
+    padding: 40px;
+}
+
+.contact-right {
+    flex: 1 1 40%;
+    padding: 40px;
+    background: #80089e;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.container p {
+    margin-bottom: 50px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder {
+    color: #888;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #80089e;
+}
+
+button {
+    background: #80089e;
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px rgba(21,0,181,0.3);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #a00dcd;
+}
+
+.contact-left h3, .contact-right h3 {
+    font-weight: 600;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 30px;
+}
+
+.contact-left h3 {
+    color: black;
+}
+
+.contact-right h3 {
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-left, .contact-right {
+        flex: 1 1 100%;
+    }
+
+    button {
+        width: auto;
+    }
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#back {
+    background: #b711e0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+#back:hover {
+    background: #a00dcd;
+}
+
+.fa-share {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.fa-share:hover {
+    color: #b711e0;
+}
+
+
